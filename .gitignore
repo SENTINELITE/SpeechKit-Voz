@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Swift Package Manager
+/.build/
+/Packages/
+# The manifest resolves SpeechKit from a local path or from GitHub depending on
+# SPEECHKIT_VOZ_USE_LOCAL_SPEECHKIT, so Package.resolved differs between the two
+# modes. Switching modes just re-resolves.
+/Package.resolved
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/
+.swiftpm/xcode/xcshareddata/
+.swiftpm/xcode/xcuserdata/
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+/SpeechKitVoz.xcworkspace/
+
+# Local credentials
+.netrc
