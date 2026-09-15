@@ -4,7 +4,9 @@ All notable changes to SpeechKit-Voz will be documented in this file.
 
 SpeechKit-Voz follows semantic versioning. Source-breaking changes ship in a new major version.
 
-## [Unreleased]
+## [1.0.0] - 2026-09-15
+
+Requires SpeechKit 2.0.0 or later.
 
 ### Added
 
