@@ -9,7 +9,7 @@ import PackageDescription
 // both packages change together.
 let speechKitDependency: Package.Dependency = ProcessInfo.processInfo.environment["SPEECHKIT_VOZ_USE_LOCAL_SPEECHKIT"] != nil
     ? .package(path: "../SpeechKit")
-    : .package(url: "https://github.com/SENTINELITE/SpeechKit.git", from: "2.0.0")
+    : .package(url: "https://github.com/SENTINELITE/SpeechKit.git", "2.0.0"..<"4.0.0")
 
 // `xcodebuild` applies a command-line `OTHER_SWIFT_FLAGS` to every target in the
 // graph, and Xcode builds package dependencies with `-suppress-warnings`; the two
