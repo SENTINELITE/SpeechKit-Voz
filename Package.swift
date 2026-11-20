@@ -40,7 +40,7 @@ let package = Package(
         speechKitDependency,
         .package(
             url: "https://github.com/Desert-Ant-Labs/desert-ant-core.git",
-            exact: "3.1.0"
+            exact: "4.3.0"
         ),
     ],
     targets: [

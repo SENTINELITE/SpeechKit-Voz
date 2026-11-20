@@ -4,7 +4,7 @@ import Foundation
 /// Controls where VOZ reads and stores its on-device speech-recognition model.
 ///
 /// Leave both locations unset to use the VOZ managed cache. Model files are not
-/// bundled with SpeechKitVoz; the first preparation downloads roughly 467 MB.
+/// bundled with SpeechKitVoz; the first preparation downloads roughly 337 MB.
 @available(iOS 18.0, macOS 15.0, visionOS 2.0, *)
 @available(watchOS, unavailable)
 public struct VozConfiguration: Sendable, Hashable {

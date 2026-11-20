@@ -9,7 +9,7 @@ Apache 2.0, and their terms apply to any app that ships this package.
 ## Desert Ant Labs Source-Available License 1.0
 
 The pinned
-[`desert-ant-core` 3.1.0 source](https://github.com/Desert-Ant-Labs/desert-ant-core/tree/v3.1.0/Sources/Voz)
+[`desert-ant-core` 4.3.0 source](https://github.com/Desert-Ant-Labs/desert-ant-core/tree/v4.3.0/Sources/Voz)
 and the [`desert-ant-labs/voz` model](https://huggingface.co/desert-ant-labs/voz)
 are licensed under the
 [Desert Ant Labs Source-Available License 1.0](https://license.desertant.com/1.0).
@@ -32,9 +32,9 @@ The obligations that affect an app shipping SpeechKit-Voz are:
 ## Model distribution
 
 SpeechKit-Voz does not bundle model files and this repository does not commit
-them. Preparation fetches the pinned `v0.1.0` model from
+them. Preparation fetches the pinned `v0.5.0` model from
 <https://huggingface.co/desert-ant-labs/voz> unless the configured model
-directory already contains the required files. The download is roughly 467 MB.
+directory already contains the required files. The download is roughly 337 MB.
 
 This summary is provided for convenience only. Read the full license text at
 <https://license.desertant.com/1.0> before distributing an app that links this

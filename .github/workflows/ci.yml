@@ -68,7 +68,7 @@ jobs:
             --output-dir '${{ runner.temp }}/SpeechKitVoz.doccarchive' \
             --fallback-display-name SpeechKitVoz \
             --fallback-bundle-identifier com.sentinelite.SpeechKitVoz \
-            --fallback-bundle-version 1.0.0 \
+            --fallback-bundle-version 1.1.0 \
             --warnings-as-errors
 
   platform-build:

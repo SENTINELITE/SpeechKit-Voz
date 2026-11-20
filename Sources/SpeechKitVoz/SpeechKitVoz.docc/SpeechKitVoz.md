@@ -11,7 +11,7 @@ loading, and release lifecycle, plus an extension on SpeechKit's
 through it.
 
 VOZ needs no API key and sends no audio to a transcription API. It downloads a
-roughly 467 MB Core ML model on first preparation unless the configured model
+roughly 337 MB Core ML model on first preparation unless the configured model
 directory already contains the required files. SpeechKitVoz does not bundle
 model files, and this repository does not commit them.
 

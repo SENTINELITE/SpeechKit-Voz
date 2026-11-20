@@ -4,6 +4,14 @@ All notable changes to SpeechKit-Voz will be documented in this file.
 
 SpeechKit-Voz follows semantic versioning. Source-breaking changes ship in a new major version.
 
+## [1.1.0] - 2026-11-20
+
+- Supports SpeechKit 2.x and 3.x.
+- Pins Desert Ant Core 4.3.0, which downloads the tagged VOZ v0.5.0 Core ML
+  model on Apple platforms. The managed model download is about 337 MB.
+- Exposes the model revision and approximate download size through
+  `VozModelDetails` for apps and command-line tools.
+
 ## [1.0.0] - 2026-09-15
 
 Requires SpeechKit 2.0.0 or later.

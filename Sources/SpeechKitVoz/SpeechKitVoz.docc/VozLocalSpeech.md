@@ -8,7 +8,7 @@ SpeechKitVoz exposes VOZ on iOS 18, macOS 15, and visionOS 2. It is unavailable
 on watchOS. VOZ handles imported files and recordings after capture ends. It
 does not provide realtime transcription or microphone capture.
 
-VOZ needs no API key. It downloads a roughly 467 MB Core ML model during
+VOZ needs no API key. It downloads a roughly 337 MB Core ML model during
 preparation unless the configured model directory already contains the required
 files. SpeechKitVoz does not bundle model files, and this repository does not
 commit them.
@@ -173,7 +173,7 @@ preparation.
 ## Network, platform, and language limits
 
 SpeechKitVoz does not send selected or recorded audio to a transcription API. A
-managed model download uses the network and fetches the pinned `v0.1.0` model
+managed model download uses the network and fetches the pinned `v0.5.0` model
 from [Hugging Face](https://huggingface.co/desert-ant-labs/voz). The VOZ runtime
 may also send the license's minimal device-counting telemetry. The license says
 this telemetry excludes inputs, outputs, and user content. Once model files are
@@ -192,7 +192,7 @@ before making accuracy claims for a language or recording type.
 ## License
 
 SpeechKitVoz source is available under Apache 2.0. VOZ is different. The pinned
-[`desert-ant-core` 3.1.0 source](https://github.com/Desert-Ant-Labs/desert-ant-core/tree/v3.1.0/Sources/Voz)
+[`desert-ant-core` 4.3.0 source](https://github.com/Desert-Ant-Labs/desert-ant-core/tree/v4.3.0/Sources/Voz)
 and the [`desert-ant-labs/voz` model](https://huggingface.co/desert-ant-labs/voz)
 use the [Desert Ant Labs Source-Available License 1.0](https://license.desertant.com/1.0).
 The terms are free below 100,000 monthly active devices per platform for each

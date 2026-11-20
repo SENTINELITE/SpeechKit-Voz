@@ -22,11 +22,12 @@ It transcribes completed audio: imported files and recordings after capture ends
 - iOS 18+
 - macOS 15+
 - visionOS 2+
-- SpeechKit
+- SpeechKit 2.x or 3.x
+- Apple Silicon on macOS for the Core ML build
 
 VOZ is unavailable on watchOS because it runs on Core ML. The package still declares watchOS 11 so a multi-platform app can depend on it from every target; the VOZ API is simply absent there.
 
-The model is not bundled with the package and is not committed to this repository. The first preparation downloads roughly 467 MB.
+The model is not bundled with the package and is not committed to this repository. The first preparation downloads roughly 337 MB.
 
 ## Platform Support
 
@@ -78,7 +79,7 @@ Use `isModelCached()` to decide whether to show a download prompt. It is synchro
 ```swift
 let cached = await Task.detached { voz.isModelCached() }.value
 if !cached {
-    // Ask first: this is a ~467 MB download.
+    // Ask first: this is a ~337 MB download.
     try await voz.downloadIfNeeded()
 }
 try await voz.load()
@@ -199,7 +200,7 @@ Call `release()` to drop the in-memory model while keeping its cached files. Ass
 
 ## Privacy and network
 
-SpeechKit-Voz does not send selected or recorded audio to a transcription API. A managed model download uses the network and fetches the pinned `v0.1.0` model from [Hugging Face](https://huggingface.co/desert-ant-labs/voz). The VOZ runtime may also send the license's minimal device-counting telemetry, which the license says excludes inputs, outputs, and user content. Once model files are present, transcription runs locally.
+SpeechKit-Voz does not send selected or recorded audio to a transcription API. A managed model download uses the network and fetches the pinned `v0.5.0` model from [Hugging Face](https://huggingface.co/desert-ant-labs/voz). The VOZ runtime may also send the license's minimal device-counting telemetry, which the license says excludes inputs, outputs, and user content. Once model files are present, transcription runs locally.
 
 The model covers 25 languages and does not detect which one is being spoken. Audio in an unsupported language can produce a confident but incorrect transcript. Check the [VOZ model card](https://huggingface.co/desert-ant-labs/voz) before making accuracy claims for a language or recording type.
 

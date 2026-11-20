@@ -129,7 +129,7 @@ public final class VozTranscriber {
     ///
     /// This verifies the cached manifest's recorded SHA-256 digests, so it reads
     /// every cached file rather than only checking that the files exist. It is
-    /// far cheaper than loading the model, but it is not instant for a 467 MB
+    /// far cheaper than loading the model, but it is not instant for a 337 MB
     /// cache. The method is `nonisolated`, so call it from a background task
     /// when you need to keep the main actor free:
     ///

@@ -1,6 +1,16 @@
 #if !os(watchOS)
 import Foundation
 import SpeechKit
+import Voz
+
+/// The managed Apple model selected by the Desert Ant runtime.
+public enum VozModelDetails {
+    /// The immutable Hugging Face release tag used by the managed download.
+    public static let revision = VozModel.revision
+
+    /// Approximate first-download size of the pinned Apple artifacts, in decimal megabytes.
+    public static let downloadMegabytes = 337
+}
 
 /// The lifecycle of the in-memory VOZ model managed by a ``VozTranscriber``.
 ///
